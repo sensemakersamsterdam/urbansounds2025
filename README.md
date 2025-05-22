@@ -12,3 +12,6 @@ Install the packages with
 
 Run the script `urban_sounds_v3.5.py`
 
+
+### Short description of the file.
+The script uses two threads: one for recording audio and one for classification and sending the results over MQTT.
