@@ -11,12 +11,29 @@ In this repo we present the script for the urban sounds sensor we have developed
 Clone the repo
 
 Create a virtual environment:
+
 `python -m venv urbansounds`
+
 Activate it:
+
 `source urbansounds/bin/activate`
 
 Install the packages with:
+
 `pip install -r requirements.txt`
+
+Change the settings: 
+- dev_id
+- 
+
+Create a file  `config.py` to store the MQTT credentials:
+```
+# MQTT variables 
+mqtt_host = "sensemakersams.org"
+mqtt_user = "your_user_name"
+mqtt_password = "your_password"
+```
+
 
 Run the script `urban_sounds_v3.5.py`
 
