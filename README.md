@@ -24,7 +24,7 @@ Install the packages with:
 
 Change the settings: 
 - dev_id
-- 
+- topic
 
 Create a file  `config.py` to store the MQTT credentials:
 ```
@@ -33,7 +33,6 @@ mqtt_host = "sensemakersams.org"
 mqtt_user = "your_user_name"
 mqtt_password = "your_password"
 ```
-
 
 Run the script `urban_sounds_v3.5.py`
 
