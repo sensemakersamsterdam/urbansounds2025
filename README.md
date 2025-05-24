@@ -36,7 +36,9 @@ mqtt_password = "your_password"
 
 Run the script `urban_sounds_v3.5.py`
 
-N.B. This script is made for a Raspberry Pi, but it will also run on other hardware. Except for the cpu_temp function this will raise an exception. 
+You can change the setting `SAVE_RECORDING = False` to True if you want to record .wav files. 
+
+N.B. This script is made for a Raspberry Pi, but it will also run on other hardware. The cpu_temp function will raise an exception, this is only for RPi. 
 
 
 ### Short description of the script.
