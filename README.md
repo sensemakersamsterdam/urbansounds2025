@@ -3,13 +3,13 @@
 In this repo we present the script for the urban sounds sensor we have developed with Sensemakers. This is the third version of the sound sensor. It was developed in spring 2025.
 
 ## Hardware
-- A raspberry pi 5 with 16Gb RAM (8Gb might be fine too)
+- A raspberry pi 5 or 4
+-   You will need at least 4 Gb of RAM 
 - A microphone. We use an UMIK.
 - An all weather casing.
 
 ## How to start
-**
-
+** Tested with python 3.11 and 3.12**
 
 Create a virtual environment:
 
@@ -24,6 +24,7 @@ Install portaudio:
 `sudo apt install portaudio19-dev`
 
 Clone the repo:
+
 `git clone https://www.github.com/sensemakersamsterdam.com/urbansounds2025` 
 
 `cd urbansounds2025`
@@ -33,7 +34,7 @@ Install the packages with:
 `pip install -r requirements.txt`
 
 Change the settings in the script urban_sooundsv_3.5.py: 
-- dev_id
+- dev_id 
 - topic
 
 Create a file  `config.py` to store the MQTT credentials:
@@ -46,7 +47,8 @@ mqtt_password = "your_password"
 
 Run the script `urban_sounds_v3.5.py`
 
-The first time you will run the script it will download the CLAP model from Huggingface (automatically)
+The first time you will run the script it will download the CLAP model from Huggingface (automatically).
+Also, after starting up the classification process must 'warm up' so this will take a minute or so. Then classification will go automatically.
 
 You can change the setting `SAVE_RECORDING = False` to True if you want to record .wav files. 
 
