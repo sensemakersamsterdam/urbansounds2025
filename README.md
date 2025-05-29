@@ -33,7 +33,7 @@ Install the packages with:
 
 `pip install -r requirements.txt`
 
-Change the settings in the script urban_sooundsv_3.5.py: 
+Change the settings in the script urban_sounds_v3.5.py: 
 - dev_id 
 - topic
 
