@@ -18,11 +18,15 @@ Activate it:
 
 `source urbansounds/bin/activate`
 
+Install portaudio:
+
+`sudo apt install portaudio19-dev`
+
 Install the packages with:
 
 `pip install -r requirements.txt`
 
-Change the settings: 
+Change the settings in the script urban_sooundsv_3.5.py: 
 - dev_id
 - topic
 
