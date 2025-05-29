@@ -40,6 +40,8 @@ mqtt_password = "your_password"
 
 Run the script `urban_sounds_v3.5.py`
 
+The first time you will run the script it will download the CLAP model from Huggingface (automatically)
+
 You can change the setting `SAVE_RECORDING = False` to True if you want to record .wav files. 
 
 N.B. This script is made for a Raspberry Pi, but it will also run on other hardware. The cpu_temp function will raise an exception, this is only for RPi. 
