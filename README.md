@@ -8,7 +8,8 @@ In this repo we present the script for the urban sounds sensor we have developed
 - An all weather casing.
 
 ## How to start
-Clone the repo
+**
+
 
 Create a virtual environment:
 
@@ -21,6 +22,11 @@ Activate it:
 Install portaudio:
 
 `sudo apt install portaudio19-dev`
+
+Clone the repo:
+`git clone https://www.github.com/sensemakersamsterdam.com/urbansounds2025` 
+
+`cd urbansounds2025`
 
 Install the packages with:
 
