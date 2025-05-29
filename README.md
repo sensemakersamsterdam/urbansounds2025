@@ -9,7 +9,7 @@ In this repo we present the script for the urban sounds sensor we have developed
 - An all weather casing.
 
 ## How to start
-** Tested with python 3.11 and 3.12**
+**Tested with python 3.11 and 3.12**
 
 Create a virtual environment:
 
