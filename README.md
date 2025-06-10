@@ -25,7 +25,7 @@ Install portaudio:
 
 Clone the repo:
 
-`git clone https://www.github.com/sensemakersamsterdam.com/urbansounds2025` 
+`git clone https://www.github.com/sensemakersamsterdam/urbansounds2025` 
 
 `cd urbansounds2025`
 
