@@ -19,9 +19,13 @@ Activate it:
 
 `source urbansounds/bin/activate`
 
-Install portaudio:
+Install portaudio en pyaudio:
 
-`sudo apt install portaudio19-dev`
+`sudo apt install python3-pyaudio`
+
+`sudo apt install portaudio19-dev python3-dev`
+
+`pip install pyaudio`
 
 Clone the repo:
 
