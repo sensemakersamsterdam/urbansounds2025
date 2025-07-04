@@ -49,7 +49,10 @@ mqtt_user = "your_user_name"
 mqtt_password = "your_password"
 ```
 
-Run the script `urban_sounds_v3.5.py`
+Run the script `urban_sounds_v3.5.py`. You can use the following command:
+`nohup taskset -c 0-1 python urban_sounds_v3.5.py`
+
+(`nohup` = no hangup, ensures your remote connection stays open. `taskset -c 0-1` ensures you use two of 4 cores to prevent overusage of the Pi)
 
 The first time you will run the script it will download the CLAP model from Huggingface (automatically).
 Also, after starting up the classification process must 'warm up' so this will take a minute or so. Then classification will go automatically.
