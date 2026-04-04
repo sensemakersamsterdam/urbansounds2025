@@ -37,11 +37,11 @@ Install the packages with:
 
 `pip install -r requirements.txt`
 
-Change the settings in the script urban_sounds_v3.5.py: 
+Change the settings in the script urban_sounds_v3.6.py: 
 - dev_id 
 - topic
 
-Create a file  `config.py` to store the MQTT credentials:
+Create a file  `config.py` to store the MQTT credentials: 
 ```
 # MQTT variables 
 mqtt_host = "sensemakersams.org"
@@ -54,7 +54,7 @@ As (strong) winds disrupt the quality of the sample (you hear only noise) we are
 Run the script `urban_sounds_v3.6.py`. You can use the following command:
 `nohup taskset -c 0-1 python urban_sounds_v3.6.py`
 
-(`nohup` = no hangup, ensures your remote connection stays open. `taskset -c 0-1` ensures you use two of 4 cores to prevent overusage of the Pi)
+(`nohup` = no hangup, ensures your remote connection stays open. `taskset -c 0-1` ensures you use two of 4 cores to prevent overusage of the Pi's CPU)
 
 The first time you will run the script it will download the CLAP model from Huggingface (automatically).
 Also, after starting up the classification process must 'warm up' so this will take a minute or so. Then classification will go automatically.
@@ -63,6 +63,8 @@ You can change the setting `SAVE_RECORDING = False` to True if you want to recor
 
 N.B. This script is made for a Raspberry Pi, but it will also run on other hardware. The cpu_temp function will raise an exception, this is only for RPi. 
 
-
 ### Short description of the script.
-The script uses two threads: one for recording audio and one for classification and sending the results over MQTT.
+The script uses two threads: one for recording the audio and one for classification and sending the results over MQTT.
+
+## A short video on CLAP AI model
+[https://www.youtube.com/watch?v=dPcVhHVIoIs](https://www.youtube.com/watch?v=dPcVhHVIoIs)
